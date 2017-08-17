@@ -41,7 +41,7 @@ class Sender(object):
         self.port = port
         self.remote = '{0}:{1}/'.format(self.host, self.port)
         self.data = {}
-        self.timeout = 5
+        self.timeout = 15
 
     def _wrap_post_data(self, **kwargs):
         self.data = kwargs
